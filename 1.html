@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog de notas</title> <link rel="stylesheet" href="2.css">
+   
+</head>
+<body>
+        <header>
+        <h1>Mi Blog de notas</h1>
+        <nav>
+            <button class="category-btn active" data-category="all">Todas</button>
+            <button class="category-btn" data-category="html">Html</button>
+            <button class="category-btn" data-category="css">Css</button>
+            <button class="category-btn" data-category="js">Js</button>
+            <button class="category-btn" data-category="mixed">Mixtas</button>
+            </nav>
+            </header>
+
+         <main>
+        <div>
+            <input type="text" id="search" placeholder="buscar notas...">
+            <button id="add-note-btn">agregar nueva nota</button>
+        </div>
+
+        <div id="notes-container">
+ 
+        </div>
+
+        <div id="note-modal" class="modal">
+          <div class="modal-content">
+          <h2 id="modal-title">agregar Nueva Nota</h2>
+          <input type="text" id="note-title" placeholder="titulo de la nota">
+          <select id="note-category">
+           <option value="html">HTML</option>
+         <option value="css">CSS</option>
+       <option value="js">JavaScript</option>
+      <option value="mixed">Mixta</option>
+        </select>
+         <textarea id="note-content" placeholder="contenido de la nota..." rows="5"></textarea>
+         <button id="save-note">guardar</button>
+          <button id="cancel-note">cancelar</button>
+     </div>
+      </div>
+    </main>
+
+<script src="3.js"></script>
+</body>
+</html>
+</content>
+</create_file>
